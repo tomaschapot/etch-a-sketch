@@ -5,10 +5,15 @@
 }
 
 body {
+}
+.main-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
+	background-color: rgb(94, 94, 94);
+	width: 100vw;
+	height: 100vh;
 }
 
 .container {
@@ -16,42 +21,68 @@ body {
 	margin-top: 15px;
 	display: flex;
 	flex-wrap: wrap;
-	width: 900px;
-	height: 900px;
+	width: 700px;
+	height: 700px;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	background-color: white;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.411);
+}
+p {
+	color: rgba(255, 255, 255, 0.596);
+	font: 100;
+	text-align: center;
+}
+span {
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.774);
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.controls {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	background-color: rgba(255, 255, 255, 0.212);
+	padding: 20px;
+	border-radius: 6px;
+}
+.controls label {
+	font-size: 1.5rem;
+}
+#color-selector {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border: none;
+}
+button {
+	padding: 15px;
+	background-color: rgb(73, 73, 73);
+	color: white;
+	border: none;
+	border-radius: 4px;
+	transition: 0.3s;
+}
+input {
+	background-color: rgb(197, 197, 197);
+	border: none;
+	border-radius: 4px;
+	height: 30px;
+	text-align: center;
+}
+button:hover {
+	color: black;
+	background-color: rgb(143, 143, 143);
 }
 
 .box {
 	border: 0.2px solid rgb(241, 241, 241);
-}
-
-.painted-black {
-	background-color: rgb(53, 53, 53);
-	border: 0.2px solid rgb(53, 53, 53);
-}
-
-.painted-red {
-	background-color: rgb(255, 59, 59);
-	border: 0.2px solid rgb(255, 59, 59);
-}
-
-.painted-yellow {
-	background-color: rgb(253, 219, 65);
-	border: 0.2px solid rgb(253, 219, 65);
-}
-
-.painted-green {
-	background-color: rgb(108, 209, 61);
-	border: 0.2px solid rgb(108, 209, 61);
-}
-
-.painted-blue {
-	background-color: rgb(45, 110, 252);
-	border: 0.2px solid rgb(45, 110, 252);
-}
-.painted-orange {
-	background-color: rgb(247, 195, 25);
-	border: 0.2px solid rgb(247, 195, 25);
 }
