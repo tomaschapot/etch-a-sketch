@@ -8,20 +8,31 @@
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<input type="color" value="#333333" />
-		<label for="">Color: </label>
-		<select name="colors" id="colors">
-			<option value="black">Black</option>
-			<option value="red">Red</option>
-			<option value="blue">Blue</option>
-			<option value="green">Green</option>
-			<option value="yellow">Yellow</option>
-			<option value="orange">Orange</option>
-		</select>
-		<label for="">Grid Density: </label>
-		<input type="Number" name="" id="grid-density" />
-		<button>Generate</button>
-		<div class="container"></div>
+		<div class="main-container">
+			<div class="controls">
+				<h1>Etch-a-Sketch</h1>
+
+				<input type="color" id="color-selector" value="#333333" />
+
+				<input
+					type="text"
+					name=""
+					id="grid-density"
+					placeholder="Grid Density"
+				/>
+				<button>Generate</button>
+				<div class="controls">
+					<p>
+						<span>Click:</span> Single Dot<br /><span>Click + Alt:</span>
+						Drag<br /><span>Click + Alt + Ctrl:</span> Drag Erase<br /><span
+							>Click + Ctrl:</span
+						>
+						Erase
+					</p>
+				</div>
+			</div>
+			<div class="container"></div>
+		</div>
 		<script src="./main.js"></script>
 	</body>
 </html>
