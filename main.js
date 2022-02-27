@@ -1,7 +1,15 @@
 const $container = document.querySelector(".container");
-let i = 0;
-
+const $button = document.querySelector("button");
 let boxSize;
+
+$button.addEventListener("click", () => {
+	const $grid = $container.querySelectorAll("div"); //resetea la grilla
+	$grid.forEach((box) => {
+		box.remove();
+	});
+	const $gridDensity = document.querySelector("#grid-density").value;
+	createBoxes($gridDensity);
+});
 
 function createBoxes(divisons) {
 	boxSize = 900 / divisons;
@@ -10,10 +18,9 @@ function createBoxes(divisons) {
 		const box = document.createElement("div");
 		box.classList.add("box");
 		box.setAttribute("style", `height: ${boxSize}px; width: ${boxSize}px`);
-
 		$container.appendChild(box);
 		i++;
 	}
 }
 
-createBoxes(8);
+createBoxes(50);
