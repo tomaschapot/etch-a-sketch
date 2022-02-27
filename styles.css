@@ -27,7 +27,31 @@ body {
 	border: 0.2px solid rgb(241, 241, 241);
 }
 
-.painted {
+.painted-black {
 	background-color: rgb(53, 53, 53);
 	border: 0.2px solid rgb(53, 53, 53);
+}
+
+.painted-red {
+	background-color: rgb(255, 59, 59);
+	border: 0.2px solid rgb(255, 59, 59);
+}
+
+.painted-yellow {
+	background-color: rgb(253, 219, 65);
+	border: 0.2px solid rgb(253, 219, 65);
+}
+
+.painted-green {
+	background-color: rgb(108, 209, 61);
+	border: 0.2px solid rgb(108, 209, 61);
+}
+
+.painted-blue {
+	background-color: rgb(45, 110, 252);
+	border: 0.2px solid rgb(45, 110, 252);
+}
+.painted-orange {
+	background-color: rgb(247, 195, 25);
+	border: 0.2px solid rgb(247, 195, 25);
 }
