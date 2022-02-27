@@ -27,22 +27,22 @@ function createBoxes(divisons) {
 $container.addEventListener("mouseover", (e) => {
 	if (e.ctrlKey === true) {
 		e.target.classList.add("painted");
-		event.stopPropagation();
+		event.stopPropagation(e);
 	}
 	if (e.ctrlKey === true && e.altKey === true) {
 		e.target.classList.remove("painted");
-		event.stopPropagation();
+		event.stopPropagation(e);
 	}
 });
 
 $container.addEventListener("click", (e) => {
-	if (e.ctrlKey === false && e.target != "div.container") {
+	if (e.ctrlKey === false && e.target.classList[0] === "box") {
 		e.target.classList.add("painted");
-		event.stopPropagation();
+		event.stopPropagation(e);
 	}
 	if (e.altKey === true) {
 		e.target.classList.remove("painted");
-		event.stopPropagation();
+		event.stopPropagation(e);
 	}
 	console.log(e);
 });
