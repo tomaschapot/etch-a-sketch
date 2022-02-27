@@ -2,6 +2,7 @@ const $container = document.querySelector(".container");
 const $button = document.querySelector("button");
 let boxSize;
 
+//Start Button
 $button.addEventListener("click", () => {
 	const $grid = $container.querySelectorAll("div"); //resetea la grilla
 	$grid.forEach((box) => {
@@ -23,4 +24,27 @@ function createBoxes(divisons) {
 	}
 }
 
-createBoxes(50);
+$container.addEventListener("mouseover", (e) => {
+	if (e.ctrlKey === true) {
+		e.target.classList.add("painted");
+		event.stopPropagation();
+	}
+	if (e.ctrlKey === true && e.altKey === true) {
+		e.target.classList.remove("painted");
+		event.stopPropagation();
+	}
+});
+
+$container.addEventListener("click", (e) => {
+	if (e.ctrlKey === false && e.target != "div.container") {
+		e.target.classList.add("painted");
+		event.stopPropagation();
+	}
+	if (e.altKey === true) {
+		e.target.classList.remove("painted");
+		event.stopPropagation();
+	}
+	console.log(e);
+});
+
+createBoxes(16); //starting grid

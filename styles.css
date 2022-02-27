@@ -24,5 +24,10 @@ body {
 }
 
 .box {
-	border: 0.2px solid rgb(148, 148, 148);
+	border: 0.2px solid rgb(241, 241, 241);
+}
+
+.painted {
+	background-color: rgb(53, 53, 53);
+	border: 0.2px solid rgb(53, 53, 53);
 }
